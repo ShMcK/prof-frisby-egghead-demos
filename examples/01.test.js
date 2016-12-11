@@ -9,7 +9,7 @@
 //   return String.fromCharCode(parseInt(str.trim()) + 1)
 // }
 
-const Box = require('../lib')
+const Box = require('../lib/Box')
 
 const nextCharForNumberString = str => 
   Box(str)

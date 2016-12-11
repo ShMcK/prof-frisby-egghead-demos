@@ -1,4 +1,4 @@
-const Box = require('../lib')
+const Box = require('../lib/Box')
 
 // const moneyToFloat = str => {
 //   return parseFloat(str.replace(/\$/g, ''))
