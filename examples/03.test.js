@@ -30,7 +30,6 @@ describe('03', () => {
 
   it('should create an error if no color', () => {
     const result = findColor('green')
-    .inspect()
       .map(x => x.slice(1))
       .map(x => x.toUpperCase())
       .fold(x => 'error', x => x)
