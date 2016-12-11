@@ -7,9 +7,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "immutable": "^3.8.1",
+    "immutable-ext": "^1.0.8"
+  },
+  "devDependencies": {
+    "expect-immutable": "^0.0.3",
     "jest": "^17.0.3"
   },
   "jest": {
-    "testPathDirs": ["./examples"]
+    "testPathDirs": [
+      "./examples"
+    ]
   }
 }
