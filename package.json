@@ -1,0 +1,15 @@
+{
+  "name": "prof-frisby-egghead",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^17.0.3"
+  },
+  "jest": {
+    "testPathDirs": ["./examples"]
+  }
+}
