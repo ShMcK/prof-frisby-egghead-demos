@@ -26,7 +26,7 @@ const percentToFloat = str =>
 
 const applyDiscount = (price, discount) =>
   moneyToFloat(price)
-    .fold(cost =>
+    .chain(cost =>
       percentToFloat(discount)
       .fold(savings =>
         cost - cost * savings))
