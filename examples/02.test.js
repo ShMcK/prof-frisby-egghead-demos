@@ -1,12 +1,14 @@
 const Box = require('../lib/Box')
+const { multiply, replace } = require('ramda')
 
 // const moneyToFloat = str => {
 //   return parseFloat(str.replace(/\$/g, ''))
 // }
 
 const moneyToFloat = str =>
-  Box(str.replace(/\$/g, ''))
-    .map(s => parseFloat(s))
+  Box(str)
+    .map(replace(/\$/g, ''))
+    .map(parseFloat)
 
 // const percentToFloat = str =>
 //   const replaced = str.replace(/\$/g, '')
@@ -14,9 +16,10 @@ const moneyToFloat = str =>
 //   return number * 0.01
 
 const percentToFloat = str =>
-  Box(str.replace(/\$/g, ''))
-    .map(s => parseFloat(s))
-    .map(s => s * 0.01)
+  Box(str)
+    .map(replace(/\$/g, ''))
+    .map(parseFloat)
+    .map(multiply(0.01))
 
 // const applyDiscount = (price, discount) => {
 //   const cost = moneyToFloat(price)

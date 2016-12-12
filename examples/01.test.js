@@ -10,14 +10,15 @@
 // }
 
 const Box = require('../lib/Box')
+const { trim, inc, toLower } = require('ramda')
 
 const nextCharForNumberString = str => 
   Box(str)
-  .map(s => s.trim())
-  .map(s => new Number(s))
-  .map(s => s + 1)
-  .map(s => String.fromCharCode(s))
-  .fold(s => s.toLowerCase())
+  .map(trim)
+  .map(parseInt)
+  .map(inc)
+  .map(String.fromCharCode)
+  .fold(toLower)
 
 
 describe('01', () => {

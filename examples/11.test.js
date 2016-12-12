@@ -1,12 +1,13 @@
 const LazyBox = require('../lib/LazyBox')
+const { trim, inc, toLower } = require('ramda')
 
 const nextCharForNumberString = str => 
   LazyBox(() => str) // a fn inside
-  .map(s => s.trim())
-  .map(s => new Number(s))
-  .map(n => n + 1)
-  .map(n => String.fromCharCode(n))
-  .fold(s => s.toLowerCase()) // lazy until fold
+  .map(trim)
+  .map(parseInt)
+  .map(inc)
+  .map(String.fromCharCode)
+  .fold(toLower) // lazy until fold
 
 
 describe('11', () => {
