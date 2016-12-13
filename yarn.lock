@@ -678,6 +678,10 @@ function-bind@^1.0.2, function-bind@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
+futurize:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/futurize/-/futurize-1.0.2.tgz#7cce73efa3eae3a5ce27a3fce69889d478e9ce38"
+
 generate-function@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.0.0.tgz#6858fe7c0969b7d4e9093337647ac79f60dfbe74"
